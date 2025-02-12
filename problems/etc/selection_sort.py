@@ -2,9 +2,9 @@ def selection_sort(arr: list[int]):
     n = len(arr)
 
     for i in range(n - 1):
-        min_index = i + 1
+        min_index = i
 
-        for j in range(i, n):
+        for j in range(i + 1, n):
             if arr[min_index] > arr[j]:
                 min_index = j
 
