@@ -1,7 +1,8 @@
 def insertion_sort(arr: list[int]):
-    for i in range(len(arr) - 1):
-        current_value = arr[i]
+    n = len(arr)
+    for i in range(1, n - 1):
         position = i
+        current_value = arr[i]
 
         while position > 0 and arr[position - 1] > current_value:
             arr[position] = arr[position - 1]
