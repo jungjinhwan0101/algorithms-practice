@@ -3,11 +3,12 @@ def selection_sort(arr: list[int]):
 
     for i in range(n - 1):
         min_index = i
-
-        for j in range(i + 1, n):
-            if arr[min_index] > arr[j]:
+        # print(f"[{i=}]")
+        for j in range(i, n):
+            # print(f"{j=}")
+            if arr[j] < arr[min_index]:
                 min_index = j
-
+        # print()
         arr[i], arr[min_index] = arr[min_index], arr[i]
 
     return arr
